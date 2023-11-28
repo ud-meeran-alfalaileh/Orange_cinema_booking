@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "286425702636",
+    "project_id": "cinema-booking-app-7df82",
+    "storage_bucket": "cinema-booking-app-7df82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286425702636:android:b9d1ec48235668bcd685c9",
+        "android_client_info": {
+          "package_name": "com.example.cinema_booking_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU75QkwYWAwywHM4mVJBu1S_WyRd6cQxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
