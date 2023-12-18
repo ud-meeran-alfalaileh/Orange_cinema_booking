@@ -7,9 +7,9 @@ class DashboardController extends GetxController {
     QuerySnapshot querySnapshot =
         await FirebaseFirestore.instance.collection('ads').get();
 
-    querySnapshot.docs.forEach((doc) {
+    for (var doc in querySnapshot.docs) {
       ads.add(doc.data() as Map<String, dynamic>);
-    });
+    }
     return ads;
   }
 }

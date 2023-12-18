@@ -1,6 +1,9 @@
 import 'package:cinema_booking_app/src/constant/color.dart';
+import 'package:cinema_booking_app/src/repository/auth/auth_repo.dart';
 import 'package:cinema_booking_app/src/view/navbar_pages/cinema_page.dart';
 import 'package:cinema_booking_app/src/view/navbar_pages/dashboard_page.dart';
+import 'package:cinema_booking_app/src/view/navbar_pages/map_page.dart';
+import 'package:cinema_booking_app/src/view/navbar_pages/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,11 +15,14 @@ class NavBarWidget extends StatefulWidget {
 }
 
 class _NavBarWidgetState extends State<NavBarWidget> {
+  final _authRepo = Get.put(AuthenticationRepository());
+  late final email = _authRepo.firebaseUser.value?.email;
+
   final List<Widget> widgetList = const [
     DashboardPage(),
     CinemaPage(),
-    DashboardPage(),
-    DashboardPage(),
+    MapPage(),
+    ProfilePage(),
   ];
   RxInt selectedIndex = 0.obs;
 

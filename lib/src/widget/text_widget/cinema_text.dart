@@ -4,13 +4,23 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CinemaText {
+  static appMainText(String title) {
+    return Text(
+      title,
+      textAlign: TextAlign.center,
+      style: GoogleFonts.roboto(
+          textStyle:
+              TextStyle(fontSize: 35.sp, color: ColorConstant.mainTextColor)),
+    );
+  }
+
   static cinemaText(String title) {
     return Text(
       title,
       textAlign: TextAlign.center,
-      style: GoogleFonts.poppins(
+      style: GoogleFonts.roboto(
           textStyle:
-              TextStyle(fontSize: 15.sp, color: ColorConstant.mainTextColor)),
+              TextStyle(fontSize: 17.sp, color: ColorConstant.mainTextColor)),
     );
   }
 }

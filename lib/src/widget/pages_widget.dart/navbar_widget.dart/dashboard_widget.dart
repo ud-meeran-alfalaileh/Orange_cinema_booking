@@ -1,4 +1,6 @@
+import 'package:cinema_booking_app/src/constant/color.dart';
 import 'package:cinema_booking_app/src/getx/dashboard_controller.dart';
+import 'package:cinema_booking_app/src/repository/auth/auth_repo.dart';
 import 'package:cinema_booking_app/src/repository/service_repository/service_data.dart';
 import 'package:cinema_booking_app/src/widget/partial_widget/slider_widget.dart';
 import 'package:cinema_booking_app/src/widget/text_widget/dashboard_text.dart';
@@ -63,11 +65,17 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                 scrollDirection: Axis.vertical,
                 child: Column(
                   children: [
+                    GestureDetector(
+                        onTap: () {
+                          AuthenticationRepository().logout();
+                        },
+                        child: Icon(
+                          Icons.logout,
+                          color: ColorConstant.mainTextColor,
+                        )),
                     DashboardText.sliderText("Coming Soon..."),
-                    Container(
-                      child: SliderWidget(
-                        item: convertSnapshotsToWidgets(ads),
-                      ),
+                    SliderWidget(
+                      item: convertSnapshotsToWidgets(ads),
                     ),
                   ],
                 ),

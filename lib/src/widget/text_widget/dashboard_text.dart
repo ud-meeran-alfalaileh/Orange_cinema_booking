@@ -7,7 +7,7 @@ class DashboardText {
   static sliderText(String title) {
     return Text(
       title,
-      style: GoogleFonts.poppins(
+      style: GoogleFonts.roboto(
           textStyle:
               TextStyle(fontSize: 25.sp, color: ColorConstant.mainTextColor)),
     );
