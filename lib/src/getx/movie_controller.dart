@@ -5,11 +5,10 @@ class MovieController extends GetxController {
   Future<List<Map<String, dynamic>>> getMovies() async {
     List<Map<String, dynamic>> movies = [];
 
-    QuerySnapshot querySnapshot =
+    final QuerySnapshot<Map<String, dynamic>> result =
         await FirebaseFirestore.instance.collection('Movies').get();
-
-    for (var doc in querySnapshot.docs) {
-      movies.add(doc.data() as Map<String, dynamic>);
+    for (var doc in result.docs) {
+      movies.add(doc.data());
     }
     return movies;
   }

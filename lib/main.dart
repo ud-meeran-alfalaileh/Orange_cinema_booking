@@ -1,6 +1,6 @@
 import 'package:cinema_booking_app/firebase_options.dart';
 import 'package:cinema_booking_app/src/constant/color.dart';
-import 'package:cinema_booking_app/src/view/auth_wrapper.dart';
+import 'package:cinema_booking_app/src/widget/pages_widget/navbar_widget/navbar_widget.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
                 primaryColor: ColorConstant.mainScaffoldBackgroundColor),
-            home: const AuthWrapper());
+            home: const NavBarWidget());
       },
     );
   }

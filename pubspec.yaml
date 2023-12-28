@@ -53,6 +53,10 @@ dependencies:
   url_launcher: ^6.2.2
   custom_info_window: ^1.0.1
   clippy_flutter: ^2.0.0-nullsafety.1
+  auto_size_text: ^3.0.0
+  video_player: ^2.8.1
+  youtube_player_flutter: ^8.1.2
+  google_nav_bar: ^5.0.6
 
 
 dev_dependencies:

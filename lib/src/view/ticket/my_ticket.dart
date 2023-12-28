@@ -1,18 +1,18 @@
 import 'package:cinema_booking_app/src/constant/color.dart';
 import 'package:cinema_booking_app/src/widget/custom_widget/header_widget/app_bar.dart';
-import 'package:cinema_booking_app/src/widget/pages_widget/movies_widget/movies_widget.dart';
+import 'package:cinema_booking_app/src/widget/pages_widget/ticket/my_ticket.dart';
 import 'package:flutter/material.dart';
 
-class MoviePage extends StatelessWidget {
-  const MoviePage({super.key});
+class MyTicketPage extends StatelessWidget {
+  const MyTicketPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      appBar: mainAppBar(),
+      appBar: topRatedAppBar("My Ticket"),
       backgroundColor: ColorConstant.mainScaffoldBackgroundColor,
-      body: const MoviesWidget(),
+      body: MyTicketWidget(),
     ));
   }
 }

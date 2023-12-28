@@ -1,8 +1,6 @@
-import 'package:cinema_booking_app/src/constant/color.dart';
 import 'package:cinema_booking_app/src/getx/cinema_controller.dart';
-import 'package:cinema_booking_app/src/model/search_model.dart';
+import 'package:cinema_booking_app/src/widget/constant_widgets/sizes/sized_box.dart';
 import 'package:cinema_booking_app/src/widget/partial_widget/cinema_partial/cinema_container.dart';
-import 'package:cinema_booking_app/src/widget/partial_widget/cinema_partial/search_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -33,21 +31,8 @@ class _CinemaWidgetState extends State<CinemaWidget> {
             scrollDirection: Axis.vertical,
             child: Column(
               children: [
-                SizedBox(
-                  height: 100.h,
-                  width: 320.w,
-                  child: SearchWidget(
-                    search: SearchModel(
-                        hintText: "Search",
-                        icon: Icon(
-                          Icons.search,
-                          color: ColorConstant.secondaryScaffoldBacground,
-                        ),
-                        type: TextInputType.text,
-                        onChange: null),
-                    color: ColorConstant.mainScaffoldBackgroundColor,
-                  ),
-                ),
+                AppSizes.largeHeightSizedBox,
+                AppSizes.smallHeightSizedBox,
                 SizedBox(
                   width: 500.w,
                   height: 550.h,

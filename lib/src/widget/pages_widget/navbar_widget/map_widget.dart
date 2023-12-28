@@ -1,5 +1,5 @@
 import 'package:cinema_booking_app/src/getx/map_controller.dart';
-import 'package:cinema_booking_app/src/widget/custom_widget.dart/header_widget.dart/map_header.dart';
+import 'package:cinema_booking_app/src/widget/custom_widget/header_widget/map_header.dart';
 import 'package:cinema_booking_app/src/widget/partial_widget/map_partial.dart';
 import 'package:custom_info_window/custom_info_window.dart';
 import 'package:flutter/material.dart';

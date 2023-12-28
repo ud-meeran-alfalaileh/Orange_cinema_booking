@@ -23,7 +23,6 @@ class UserModel {
       "Password": password,
       "PhoneNumber": phone,
       "UserName": name,
-      "Image": imageUrl,
     };
   }
 

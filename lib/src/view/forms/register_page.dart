@@ -1,5 +1,5 @@
 import 'package:cinema_booking_app/src/constant/color.dart';
-import 'package:cinema_booking_app/src/widget/pages_widget.dart/forms/register_widget.dart';
+import 'package:cinema_booking_app/src/widget/pages_widget/forms/register_widget.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {

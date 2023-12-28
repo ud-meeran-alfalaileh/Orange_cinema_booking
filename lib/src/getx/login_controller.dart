@@ -1,5 +1,4 @@
 import 'package:cinema_booking_app/src/constant/color.dart';
-import 'package:cinema_booking_app/src/widget/pages_widget.dart/navbar_widget.dart/navbar_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -44,7 +43,6 @@ class LoginController extends GetxController {
             snackPosition: SnackPosition.BOTTOM,
             colorText: ColorConstant.mainScaffoldBackgroundColor,
             backgroundColor: Colors.green);
-        Get.to(const NavBarWidget());
       } else {
         Get.snackbar("ERROR", "Email or Password is invild",
             snackPosition: SnackPosition.BOTTOM,

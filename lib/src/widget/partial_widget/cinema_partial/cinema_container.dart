@@ -1,10 +1,14 @@
+import 'package:cinema_booking_app/src/view/movie_pages/movies_page.dart';
 import 'package:cinema_booking_app/src/widget/text_widget/cinema_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 cinemaContainer(cinemaImage, cinemaAddress) {
   return GestureDetector(
-    onTap: () {},
+    onTap: () {
+      Get.to(const MoviePage());
+    },
     child: SingleChildScrollView(
       physics: const NeverScrollableScrollPhysics(),
       child: SizedBox(

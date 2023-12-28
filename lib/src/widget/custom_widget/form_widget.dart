@@ -24,6 +24,9 @@ class _FormWidgetState extends State<FormWidget> {
           borderRadius: BorderRadius.all(Radius.circular(15.r)),
         ),
         child: TextFormField(
+            cursorColor: ColorConstant.mainTextColor,
+            style: GoogleFonts.roboto(
+                textStyle: TextStyle(color: ColorConstant.mainTextColor)),
             readOnly: widget.login.enableText,
             inputFormatters: widget.login.inputFormat,
             keyboardType: widget.login.type,

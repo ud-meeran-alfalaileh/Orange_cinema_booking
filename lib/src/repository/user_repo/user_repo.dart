@@ -39,4 +39,8 @@ class UserRepo extends GetxController {
           backgroundColor: Colors.red);
     });
   }
+
+  Future<void> updateUserRecord(UserModel user) async {
+    await _db.collection("User").doc(user.id).update(user.tojason());
+  }
 }

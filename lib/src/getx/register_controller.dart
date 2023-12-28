@@ -2,7 +2,7 @@ import 'package:cinema_booking_app/src/constant/color.dart';
 import 'package:cinema_booking_app/src/model/user_model.dart';
 import 'package:cinema_booking_app/src/repository/auth/auth_repo.dart';
 import 'package:cinema_booking_app/src/repository/user_repo/user_repo.dart';
-import 'package:cinema_booking_app/src/widget/pages_widget.dart/navbar_widget.dart/navbar_widget.dart';
+import 'package:cinema_booking_app/src/widget/pages_widget/navbar_widget/navbar_widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,6 +16,7 @@ class RegisterController extends GetxController {
   final TextEditingController phoneNumber = TextEditingController();
   final TextEditingController userName = TextEditingController();
   final fromKey = GlobalKey<FormState>();
+  final updatKey = GlobalKey<FormState>();
   late UserModel user;
   RxString selectedItem = "".obs;
 

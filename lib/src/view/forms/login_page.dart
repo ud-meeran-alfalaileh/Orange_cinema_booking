@@ -1,5 +1,5 @@
 import 'package:cinema_booking_app/src/constant/color.dart';
-import 'package:cinema_booking_app/src/widget/pages_widget.dart/forms/login_widget.dart';
+import 'package:cinema_booking_app/src/widget/pages_widget/forms/login_widget.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -10,9 +10,7 @@ class LoginPage extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
       backgroundColor: ColorConstant.mainScaffoldBackgroundColor,
-      body: const Center(
-        child: LoginWidget(),
-      ),
+      body: const LoginWidget(),
     ));
   }
 }
