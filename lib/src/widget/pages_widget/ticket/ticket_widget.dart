@@ -115,7 +115,7 @@ class TicketWidget extends StatelessWidget {
                     onTap: () {
                       Get.offAll(const NavBarWidget());
                     },
-                    title: "Book Now")))
+                    title: "Back To Main Page")))
       ],
     );
   }

@@ -12,7 +12,7 @@ class MovieDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      appBar: mainAppBar(),
+      appBar: mainAppBar(context),
       backgroundColor: ColorConstant.mainScaffoldBackgroundColor,
       body: MovieDetailWidget(
         movieModel: movieModel,

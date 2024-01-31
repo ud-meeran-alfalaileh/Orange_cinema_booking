@@ -48,7 +48,7 @@ class MovieDetailWidget extends StatelessWidget {
                                   itemCount: movieModel.genre.length,
                                   itemBuilder: (context, index) {
                                     return SizedBox(
-                                      width: 0.2 * screenWidth,
+                                      width: 0.25 * screenWidth,
                                       child: Center(
                                         child: MovieText.yellowText(
                                             "${movieModel.genre[index]},"),

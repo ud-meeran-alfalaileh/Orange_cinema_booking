@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-mainAppBar() {
+mainAppBar(context) {
   return AppBar(
     scrolledUnderElevation: 0,
     backgroundColor: ColorConstant.mainScaffoldBackgroundColor,
@@ -14,7 +14,7 @@ mainAppBar() {
       children: [
         IconButton(
             onPressed: () {
-              Get.back();
+              Navigator.pop(context);
             },
             icon: Icon(
               Icons.arrow_back_ios_new,

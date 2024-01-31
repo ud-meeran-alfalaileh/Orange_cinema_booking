@@ -42,8 +42,8 @@ class ProfileController extends GetxController {
     ProfileButton(
         icon: 'assets/history.svg',
         title: "Logout",
-        ontap: () {
-          AuthenticationRepository().logout();
+        ontap: () async {
+          await AuthenticationRepository().logout();
         }),
   ];
 
